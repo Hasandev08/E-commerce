@@ -21,7 +21,7 @@ const data = {
       countInStock: 20,
       brand: "Adidas",
       rating: 4.0,
-      numReviews: 10,
+      numReviews: 12,
       description: "high quality product",
     },
     {
@@ -45,7 +45,7 @@ const data = {
       countInStock: 20,
       brand: "Adidas",
       rating: 4.2,
-      numReviews: 14,
+      numReviews: 11,
       description: "high quality product",
     },
   ],
