@@ -1,6 +1,8 @@
-const cruds = require("./routes/cruds")
+const products = require("./routes/products");
+const seedRouter = require("./routes/seedRoutes");
+const carts = require("./routes/carts");
 const mongoose = require("mongoose");
-const cors = require("cors")
+const cors = require("cors");
 const express = require("express");
 const app = express();
 
@@ -11,7 +13,9 @@ mongoose
 
 app.use(cors());
 app.use(express.json());
-app.use(cruds)
+app.use("/api/seed", seedRouter);
+app.use(carts);
+app.use(products);
 
 const port = 5000;
 
